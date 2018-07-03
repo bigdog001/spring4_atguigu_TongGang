@@ -14,7 +14,7 @@ public class SpringTransactionTest {
     private Cashier cashier = null;
 
     {
-        ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ctx = new ClassPathXmlApplicationContext("applicationContext-tx-anno.xml");
         bookShopDao = ctx.getBean(BookShopDao.class);
         bookShopService = ctx.getBean(BookShopService.class);
         cashier = ctx.getBean(Cashier.class);
